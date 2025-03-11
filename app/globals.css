@@ -24,3 +24,24 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+/* เพิ่มเติมจาก CSS ที่มีอยู่แล้ว */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* เพิ่ม CSS เพื่อให้ภาพไพ่ไม่หายไป */
+.rotate-y-180 img {
+  transform: scaleX(-1); /* แก้ปัญหาภาพกลับด้านใน 3D transform */
+}
