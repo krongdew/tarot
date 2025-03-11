@@ -173,9 +173,9 @@ console.log("Category received:", category);
 const completion = await openai.chat.completions.create({
   model: "anthropic/claude-3-haiku", // เปลี่ยนเป็น GPT-4 เพื่อให้ได้ผลลัพธ์ที่ดีขึ้น (ถ้า OpenRouter สนับสนุน)
   messages: [{ role: "user", content: prompt }],
-  temperature: 0.5, // เพิ่ม temperature ให้มีความคิดสร้างสรรค์มากขึ้น
+  temperature: 0.4, // เพิ่ม temperature ให้มีความคิดสร้างสรรค์มากขึ้น
   response_format: { type: "json_object" },
-  max_tokens: 1500, // เพิ่ม token เพื่อให้ได้คำตอบที่ละเอียดขึ้น
+  max_tokens: 2000, // เพิ่ม token เพื่อให้ได้คำตอบที่ละเอียดขึ้น
   headers: headers
 });
   
